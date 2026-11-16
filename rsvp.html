@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Invitation - RSVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+
+  <div class="container">
+    <h1>RSVP</h1>
+    <p>Please confirm your attendance below:</p>
+
+    <form onsubmit="event.preventDefault(); alert('Thank you for your RSVP! We look forward to seeing you.');">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="attending">Will you attend?</label>
+      <select id="attending" name="attending">
+        <option value="yes">Yes, I will be there</option>
+        <option value="no">Sorry, I cannot make it</option>
+      </select>
+
+      <button type="submit">Submit RSVP</button>
+    </form>
+  </div>
+
+</body>
+</html>
